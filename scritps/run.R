@@ -111,7 +111,7 @@ executeGPR1 <- function(number_dataset, number_cores, number_folds, folderResult
 
   cat("\n\n################################################################################################")
   cat("\n# Runtime                                                                                        #")
-  timesExecute = rbind(timeLabelSpace, timeGR1)
+  timesExecute = rbind(timeLabelSpace, timeGPR1)
   setwd(diretorios$folderOutputDataset)
   write.csv(timesExecute, paste(dataset_name, "-RunTime-GPR1.csv", sep=""))
   cat("\n##################################################################################################\n\n")
