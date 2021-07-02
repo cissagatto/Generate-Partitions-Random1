@@ -189,7 +189,7 @@ generateR1 <- function(namesLabels, number_folds, dataset_name, ds, folderResult
     
     resumePartitions = resumePartitions[-1,]
     setwd(FolderSplit)
-    write.csv(resumePartitions, paste("fold-", f, "-groups-per-partition.csv", sep=""), row.names = FALSE)
+    write.csv(resumePartitions, paste("fold-", f, "-groups-per-partitions.csv", sep=""), row.names = FALSE)
     
     cat("\nIncrement split: ", f)
     
