@@ -122,11 +122,11 @@ cat("\nGPR1 \t nome: ", dataset_name)
 
 
 ##################################################################################################
-cat("\n\nCopy FROM google drive \n")
-destino = paste(FolderRoot, "/datasets/", dataset_name, sep="")
-origem = paste("cloud:elaine/Datasets/CrossValidation_WithValidation/", dataset_name, sep="")
-comando = paste("rclone -v copy ", origem, " ", destino, sep="")
-print(system(comando))
+#cat("\n\nCopy FROM google drive \n")
+#destino = paste(FolderRoot, "/datasets/", dataset_name, sep="")
+#origem = paste("cloud:elaine/Datasets/CrossValidation_WithValidation/", dataset_name, sep="")
+#comando = paste("rclone -v copy ", origem, " ", destino, sep="")
+#print(system(comando))
 
 
 
@@ -180,23 +180,23 @@ save(results, file = str1)
 
 
 ########################################################################################################################
-cat("\n Copy to google drive")
-origem = diretorios$folderOutputDataset
-destino = paste("cloud:elaine/[2021]ResultadosExperimentos/Generate-Partitions-Random1/", dataset_name, sep="")
-comando = paste("rclone -v copy ", origem, " ", destino, sep="")
-print(system(comando))
+#cat("\n Copy to google drive")
+#origem = diretorios$folderOutputDataset
+#destino = paste("cloud:elaine/[2021]ResultadosExperimentos/Generate-Partitions-Random1/", dataset_name, sep="")
+#comando = paste("rclone -v copy ", origem, " ", destino, sep="")
+#print(system(comando))
 
 
 ##################################################################################################
-cat("\nDelete folder output dataset \n")
-str6 = paste("rm -r ", diretorios$folderOutputDataset, sep="")
-print(system(str6))
+#cat("\nDelete folder output dataset \n")
+#str6 = paste("rm -r ", diretorios$folderOutputDataset, sep="")
+#print(system(str6))
 
 
 ##################################################################################################
-cat("\nDelete folder specific dataset \n")
-str7 = paste("rm -r ", diretorios$folderSpecificDataset, sep="")
-print(system(str7))
+#cat("\nDelete folder specific dataset \n")
+#str7 = paste("rm -r ", diretorios$folderSpecificDataset, sep="")
+#print(system(str7))
 
 
 rm(list = ls())
