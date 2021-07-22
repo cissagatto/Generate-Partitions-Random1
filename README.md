@@ -1,6 +1,9 @@
 # Generate Random Partitions Version 1
 This code is part of my PhD at PPG-CC/DC/UFSCar. The aim is generate a specific type of random partition for multilabel classification.
 
+## Types of Random Partitions
+<img src="https://github.com/cissagatto/Generate-Partitions-Random1/blob/main/images/tipos_particoes_aleatorias_transparente.png" width="300">
+
 ## Random Partitions Version 1 with Macro-F1
 <img src="https://github.com/cissagatto/Generate-Partitions-Random1/blob/main/images/R1-Ma-Branco.png" width="100">
 
