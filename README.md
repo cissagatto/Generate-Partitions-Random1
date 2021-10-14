@@ -1,6 +1,8 @@
 # Generate Random Partitions Version 1
 This code is part of my PhD at PPG-CC/DC/UFSCar. The aim is generate a specific type of random partition for multilabel classification.
 
+@misc{Gatto2021, author = {Gatto, E. C.}, title = {Generate Random Partitions Version 1 for Multilabel Classification}, year = {2021}, publisher = {GitHub}, journal = {GitHub repository}, howpublished = {\url{https://github.com/cissagatto/Generate-Partitions-Random1}}}
+
 ## Types of Random Partitions
 <img src="https://github.com/cissagatto/Generate-Partitions-Random1/blob/main/images/tipos_particoes_aleatorias_transparente.png" width="300">
 
