@@ -114,7 +114,7 @@ ds = datasets[number_dataset,]
 
 cat("\n################################################################\n")
 print(ds)
-cat("\n# DATASET PATH: \t", dataset_path)
+cat("\n# DATASET PATH: \t", dataset_path=)
 cat("\n# TEMPORARY PATH: \t", folderResults)
 cat("\n# DATASET NAME:  \t", dataset_name)
 cat("\n# NUMBER DATASET: \t", number_dataset)
@@ -230,7 +230,7 @@ print(system(paste("rm -r ", diretorios$folderDatasets, sep="")))
 # cat("\n# Copy to google drive                                      #")
 # cat("\n####################################################################\n\n")
 # destino = paste("nuvem:Partitions-Random1/", dataset_name, sep="")
-# origem = diretorios$folderResults
+# origem = diretorios$folderOutputDataset
 # comando = paste("rclone -P copy ", origem, " ", destino, sep="")
 # cat("\n", comando, "\n")
 # a = print(system(comando))

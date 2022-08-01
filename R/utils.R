@@ -233,24 +233,6 @@ directories <- function(dataset_name, folderResults){
   
   
   #############################################################################
-  # RESULTS PARTITIONS FOLDER:                                                #
-  # Folder to store the results from partitioning the label correlations      #
-  # "/dev/shm/res/birds/Partitions"                                           #
-  #############################################################################
-  folderPartitions = paste(folderReports, "/Partitions", sep="")
-  if(dir.exists(folderPartitions) == TRUE){
-    setwd(folderPartitions)
-    dir_folderPartitions = dir(folderPartitions)
-    n_folderPartitions = length(dir_folderPartitions)
-  } else {
-    dir.create(folderPartitions)
-    setwd(folderPartitions)
-    dir_folderPartitions = dir(folderPartitions)
-    n_folderPartitions = length(dir_folderPartitions)
-  }
-  
-  
-  #############################################################################
   # OUTPUT FOLDER:                                                            #
   # This folder is used to store information that will be the INPUT for the   #
   # next phase of the strategy, i.e., find the best hybrid partition with     #
@@ -304,7 +286,6 @@ directories <- function(dataset_name, folderResults){
   retorno$folderCVTR = folderCVTR
   retorno$folderCVTS = folderCVTS
   retorno$folderCVVL = folderCVVL
-  retorno$folderPartitions = folderPartitions
   retorno$folderOutput = folderOutput
   retorno$folderOutputDataset = folderOutputDataset
   
@@ -322,7 +303,6 @@ directories <- function(dataset_name, folderResults){
   retorno$dir_folderCVTR = dir_folderCVTR
   retorno$dir_folderCVTS = dir_folderCVTS
   retorno$dir_folderCVVL = dir_folderCVVL
-  retorno$dir_folderPartitions = dir_folderPartitions
   retorno$dir_folderOutput = dir_folderOutput
   retorno$dir_folderOutputDataset = dir_folderOutputDataset
   
@@ -340,7 +320,6 @@ directories <- function(dataset_name, folderResults){
   retorno$n_folderCVTR = n_folderCVTR
   retorno$n_folderCVTS = n_folderCVTS
   retorno$n_folderCVVL = n_folderCVVL
-  retorno$n_folderPartitions = n_folderPartitions
   retorno$n_folderOutput = n_folderOutput
   retorno$n_folderOutputDataset = n_folderOutputDataset
   
