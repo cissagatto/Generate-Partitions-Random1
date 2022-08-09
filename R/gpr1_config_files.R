@@ -1,31 +1,30 @@
 rm(list = ls())
 
-
 ##############################################################################
-# Generate Jaccard Partitions                                                #
-# Copyright (C) 2022                                                         #
+# BEST PARTITION MICRO-F1 CLUS                                               #
+# Copyright (C) 2021                                                         #
 #                                                                            #
-# This program is free software: you can redistribute it and/or modify it    #
-# under the terms of the GNU General Public License as published by the      #
-# Free Software Foundation, either version 3 of the License, or (at your     #
-# option) any later version. This program is distributed in the hope that    #
-# it will be useful, but WITHOUT ANY WARRANTY; without even the implied      #
-# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the   #
-# GNU General Public License for more details.                               #     
+# This code is free software: you can redistribute it and/or modify it under #
+# the terms of the GNU General Public License as published by the Free       #
+# Software Foundation, either version 3 of the License, or (at your option)  #
+# any later version. This code is distributed in the hope that it will be    #
+# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of     #
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General   #
+# Public License for more details.                                           #
 #                                                                            #
-# Elaine Cecilia Gatto | Prof. Dr. Ricardo Cerri | Prof. Dr. Mauri Ferrandin #
-# Federal University of Sao Carlos (UFSCar: https://www2.ufscar.br/) Campus  #
-# Sao Carlos Computer Department (DC: https://site.dc.ufscar.br/)            # 
-# Program of Post Graduation in Computer Science                             #
-# (PPG-CC: http://ppgcc.dc.ufscar.br/) Bioinformatics and Machine Learning   #
-# Group (BIOMAL: http://www.biomal.ufscar.br/)                               #
+# Elaine Cecilia Gatto | Prof. Dr. Ricardo Cerri | Prof. Dr. Mauri           #
+# Ferrandin | Federal University of Sao Carlos                               #
+# (UFSCar: https://www2.ufscar.br/) Campus Sao Carlos | Computer Department  #
+# (DC: https://site.dc.ufscar.br/) | Program of Post Graduation in Computer  #
+# Science (PPG-CC: http://ppgcc.dc.ufscar.br/) | Bioinformatics and Machine  #
+# Learning Group (BIOMAL: http://www.biomal.ufscar.br/)                      #
 #                                                                            #
 ##############################################################################
 
 
-########################################################################
-# WORSKSPACE
-########################################################################
+###########################################################################
+#
+###########################################################################
 FolderRoot = "~/Generate-Partitions-Random1"
 FolderScripts = "~/Generate-Partitions-Random1/R"
 
@@ -48,7 +47,7 @@ n = nrow(datasets)
 ###############################################################################
 # CREATING FOLDER TO SAVE CONFIG FILES                                        #
 ###############################################################################
-FolderCF = paste(FolderRoot, "/GPR1-Config-Files", sep="")
+FolderCF = paste(FolderRoot, "/R1-Config-Files", sep="")
 if(dir.exists(FolderCF)==FALSE){dir.create(FolderCF)}
 
 
@@ -65,7 +64,7 @@ while(i<=n){
   cat("\ndataset = ", ds$Name)
 
   # Confi File Name
-  file_name = paste(FolderCF, "/GPR1-", ds$Name, ".csv", sep="")
+  file_name = paste(FolderCF, "/R1-", ds$Name, ".csv", sep="")
 
   # Starts building the configuration file
   output.file <- file(file_name, "wb")
@@ -83,7 +82,7 @@ while(i<=n){
         file = output.file, append = TRUE)
 
   # job name
-  job_name = paste("gpr1-", ds$Name, sep = "")
+  job_name = paste("R1-", ds$Name, sep = "")
 
   # directory name
 
@@ -122,6 +121,8 @@ while(i<=n){
   # clean
   gc()
 }
+
+rm(list = ls())
 
 ###############################################################################
 # Please, any errors, contact us: elainececiliagatto@gmail.com                #

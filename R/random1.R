@@ -37,6 +37,9 @@ source("libraries.R")
 setwd(FolderScripts)
 source("utils.R")
 
+setwd(FolderScripts)
+source("run.R")
+
 
 
 ###############################################################################
@@ -72,7 +75,7 @@ args <- commandArgs(TRUE)
 # from csv file                                                               #
 ###############################################################################
 
-#config_file = "/home/cissa/Generate-Partitions-Random1/GPR1-Config-Files/GPR1-GpositiveGO.csv"
+#config_file = "/home/cissa/Generate-Partitions-Random1/R1-Config-Files/R1-GpositiveGO.csv"
 
 config_file <- args[1]
 
@@ -128,18 +131,6 @@ cat("\n################################################################\n\n")
 ###############################################################################
 if (dir.exists(folderResults) == FALSE) {dir.create(folderResults)}
 
-
-###############################################################################
-# 
-###############################################################################
-setwd(FolderScripts)
-source("libraries.R")
-
-setwd(FolderScripts)
-source("utils.R")
-
-setwd(FolderScripts)
-source("run.R")
 
 
 ###############################################################################
