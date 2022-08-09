@@ -2,7 +2,8 @@
 This code is part of my PhD at PPG-CC/DC/UFSCar. The aim is generate a specific type of random partition for multilabel classification.
 
 ## How to Cite
-@misc{Gatto2021, author = {Gatto, E. C.}, title = {Generate Random Partitions Version 1 for Multilabel Classification}, year = {2021}, publisher = {GitHub}, journal = {GitHub repository}, howpublished = {\url{https://github.com/cissagatto/Generate-Partitions-Random1}}}
+@misc{Gatto2022, author = {Gatto, E. C.}, title = {Generate Random Partitions Version 1 for Multilabel Classification}, year = {2022}, publisher = {GitHub}, journal = {GitHub repository}, howpublished = {\url{https://github.com/cissagatto/Generate-Partitions-Random1}}}
+
 
 ## Types of Random Partitions
 
@@ -132,14 +133,14 @@ Rscript random1.R [absolute_path_to_config_file]
 Example:
 
 ```
-Rscript random1.R "~/Generate-Partitions-RAndom1/GPR1-Config-Files/GPR1-GpositiveGO.csv"
+Rscript random1.R "~/Generate-Partitions-Random1/R1-Config-Files/R1-GpositiveGO.csv"
 ```
 
 ## RESULTS
 The results are stored in a folder called reports in the project root.
 
 ## DOWNLOAD RESULTS
-[Click here]
+[Click here](https://www.4shared.com/folder/xCeyWh9j/Random1.html)
 
 ## Acknowledgment
 This study is financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001
