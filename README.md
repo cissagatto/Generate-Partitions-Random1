@@ -4,10 +4,6 @@ This code is part of my PhD at PPG-CC/DC/UFSCar. The aim is generate a specific 
 ## How to Cite
 @misc{Gatto2022, author = {Gatto, E. C.}, title = {Generate Random Partitions Version 1 for Multilabel Classification}, year = {2022}, publisher = {GitHub}, journal = {GitHub repository}, howpublished = {\url{https://github.com/cissagatto/Generate-Partitions-Random1}}}
 
-
-## Types of Random Partitions
-
-
 ## Source Code
 This code source is composed of the project R to be used in RStudio IDE and also the following scripts R:
 
@@ -89,14 +85,7 @@ To run this code you will need a configuration file saved in *csv* format and wi
 
 * Use folders like */dev/shm*, *tmp* or *scratch* here.
 
-*Example:*
-
-<img src="" width="300">
-
 You can save configuration files wherever you want. The absolute path will be passed as a command line argument.
-
-## Folder Strucutre
-<img src="" width="300">
 
 ## Software Requirements
 This code was develop in RStudio Version 1.4.1106 © 2009-2021 RStudio, PBC "Tiger Daylily" (2389bc24, 2021-02-11) for Ubuntu Bionic Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.8 Chrome/69.0.3497.128 Safari/537.36. The R Language version was: R version 4.1.0 (2021-05-18) -- "Camp Pontanezen" Copyright (C) 2021 The R Foundation for Statistical Computing Platform: x86_64-pc-linux-gnu (64-bit).
@@ -114,13 +103,8 @@ Topology: 6-Core | model: Intel Core i7-10750H | bits: 64 | type: MT MCP | L2 ca
 
 Then the experiment was executed in a cluster at UFSCar.
 
-Important: we used the CLUS classifier in this experiment. This implies generating all physical ARFF training, validating, and testing files for each of the generated random partitions. Our code generates the partitions first in memory and then saves them to the HD. However, to avoid memory problems, immediately after saving to HD, the files are validated (or tested) and then deleted. Even so, make sure you have enough space on your HD and RAM for this procedure.
-
-
 ## Results
 The results stored in the folder _OUTPUT_ it will be used in the next phase: Best-Partition-Silhoute, Best-Partition-MacroF1 or Best-Partition-MicroF1. The result for a dataset must be put in the folder _PARTITIONS_ in the respective code.
-
-<img src="" width="300">
 
 
 ## RUN
